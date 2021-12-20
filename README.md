@@ -39,7 +39,7 @@ while True:
     conn, addr = sock.accept()
     print(addr)
     
-    request = conn.recv(1024).decode()
+    request = conn.recv(Server.settings["max_byte"]).decode()
     print(request)
     
     response = process(request)
@@ -63,7 +63,7 @@ while True:
     request = input('myftp@shell$ ')
     sock.send(request.encode())
     
-    response = sock.recv(1024).decode()
+    response = sock.recv(Server.settings["max_byte"]).decode()
     print(response)
     
     sock.close()

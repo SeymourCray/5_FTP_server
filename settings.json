@@ -1,0 +1,9 @@
+{
+    "logfile": "log.txt",
+    "Def_HOST": "127.0.0.1",
+    "Def_PORT": 65432,
+    "max_byte": 8192,
+    "for_users": "saved_users.txt",
+    "absolute_path": "/Users/ilya/Desktop/ftp",
+    "storage": 10000
+}
